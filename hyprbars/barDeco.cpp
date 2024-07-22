@@ -314,7 +314,7 @@ void CHyprBar::renderBarButtons(const Vector2D& bufferSize, const float scale) {
         const int RADIUS = static_cast<int>(std::ceil(scaledButtonSize / 2.0));
 
         cairo_set_source_rgba(CAIRO, button.col.r, button.col.g, button.col.b, button.col.a);
-        cairo_rectangle(CAIRO, X - RADIUS, Y, RADIUS, RADIUS);
+        cairo_rectangle(CAIRO, X - RADIUS, Y, RADIUS * 2, RADIUS * 2);
         cairo_fill(CAIRO);
 
         offset += scaledButtonsPad + scaledButtonSize;
