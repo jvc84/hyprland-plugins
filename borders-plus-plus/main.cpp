@@ -53,7 +53,7 @@ APICALL EXPORT PLUGIN_DESCRIPTION_INFO PLUGIN_INIT(HANDLE handle) {
         HyprlandAPI::addWindowDecoration(PHANDLE, w, std::make_unique<CBordersPlusPlus>(w));
     }
 
-    HyprlandAPI::addNotification(PHANDLE, "[borders-plus-plus] Initialized successfully!", CColor{0.2, 1.0, 0.2, 1.0}, 5000);
+    // HyprlandAPI::addNotification(PHANDLE, "[borders-plus-plus] Initialized successfully!", CColor{0.2, 1.0, 0.2, 1.0}, 5000);
 
     return {"borders-plus-plus", "A plugin to add more borders to windows.", "Vaxry", "1.0"};
 }
